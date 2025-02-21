@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #0A0A0A;
+}
+
+.header {
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 80px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 46, 0.9);
+    color: white;
+    margin-top: 2%;
+    padding: 5px 20px;
+    position: fixed;
+    width: 80%;
+}
+
+.header img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    padding: 1.5%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    font-family: "Press Start 2P", serif;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+.top-nav a:hover {
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1.5%;
+    gap: 15px;
+}
+
+.social-icons img {
+    height: auto;
+    object-fit: contain;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.social-icons .icon-button .discord-logo {
+    width: 32px;
+}
+
+.social-icons .icon-button .x-logo {
+    width: 24px;
+}
+
+.icon-button a:hover {
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.terminal {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    z-index: -1;
+
+
+    background-color: #0A0A0A;
+    color: #33FF33;
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 30px 25px;
+    white-space: pre-line;
+    width: 90%;
+    height: 400px;
+    line-height: 2;
+}
+
+.terminal .button {
+    grid-row: 2;
+    grid-column: span 2;
+    width: auto;
+    max-width: 200px;
+    justify-self: center;
+    color: #33FF33;
+    background-color: #0A0A0A;
+    border: 2px solid #33FF33;
+    padding: 12px 24px;
+    margin-top: 25px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.terminal .button:hover {
+    color: #00FF00;
+    border-color: #00FF00;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+}
+
+.terminal .button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00FF00;
+}
+
+.terminal .img-computer {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 1%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    justify-self: center;
+    width: 320px;
+    height: 240px;
+}
+
+.terminal .terminal-text {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 1%;
+    padding-left: 5%;
+    width: 100%;
+    justify-self: center;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/red-sky.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 26, 46, 0.9);
+    width: 60%;
+    max-width: 60%;
+    padding: 2%;
+    font-family: "Press Start 2P", serif;
+    line-height: 1.6;
+    color: white;
+}
+.about .about-content h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2%;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.about a {
+    color: #33FF33;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about a:hover {
+    color: #00FF00;
+}
+
+.visible-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    background-image: url('../images/volcano.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.hero-section-text h1 {
+    color: white;
+    font-family: "Press Start 2P", serif;
+    font-size: 3rem;
+}
+
+.hero-section-button .button-link {
+    padding: 16px 32px;
+    justify-content: center;
+    background-color: rgba(26, 26, 46, 0.9);
+    font-family: "Press Start 2P", monospace;
+    z-index: 0;
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.hero-section .button-link:hover {
+    background-color: rgba(26, 26, 46, 1);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    border-color: #fff;
+}
+
+.hero-section .button-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/roadmap-background.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.roadmap .roadmap-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 26, 46, 0.9);
+    width: 60%;
+    padding: 5%;
+    font-family: "Press Start 2P", serif;
+    line-height: 1.6;
+    color: white;
+    box-sizing: border-box;
+}
+
+.roadmap .roadmap-image {
+    margin-top: 2%;
+
+    width: 445px;
+    height: 359px;
+
+}
+
+
+.roadmap h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2%;
+}
