@@ -1,0 +1,35 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/about-background.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .about-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 26, 46, 0.9);
+    width: 60%;
+    max-width: 60%;
+    padding: 2%;
+    font-family: "Press Start 2P", serif;
+    line-height: 1.6;
+    color: white;
+    border-radius: 20px;
+}
+.about .about-content h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 2%;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+

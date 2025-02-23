@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/footer-styles.css"
 
 const About = () => {
     return (

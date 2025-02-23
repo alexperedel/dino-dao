@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from "react";
 
+import "../css/hero-styles.css";
+
 export default function Hero({ isTerminalActive }) {
 
     const textArray = useMemo(() => ["Community", "Builders", "Developers", "Explorers", "Dino DAO"], []);

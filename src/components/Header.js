@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef, useCallback } from 'react';
 import logo from '../images/logo-dao.png';
 import logoX from '../images/logo-x-white.png';
 import logoDiscord from '../images/logo-discord-white.png';
+import "../css/header-styles.css"
 
 
 const Header = () => {

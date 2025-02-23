@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 80px;
+    z-index: 55;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 46, 0.9);
+    color: white;
+    margin-top: 2%;
+    padding: 5px 20px;
+    position: fixed;
+    width: 80%;
+}
+
+.header img {
+    width: 210px;
+    height: auto;
+    object-fit: contain;
+    padding: 1.5%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    font-family: "Press Start 2P", serif;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+
+.top-nav a:hover {
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1.5%;
+    gap: 15px;
+}
+
+.social-icons img {
+    height: auto;
+    object-fit: contain;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.social-icons .icon-button .discord-logo {
+    width: 32px;
+}
+
+.social-icons .icon-button .x-logo {
+    width: 24px;
+}
+
+.icon-button a:hover {
+    background-color: #333333;
+    border-radius: 10px;
+}

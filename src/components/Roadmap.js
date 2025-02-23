@@ -1,5 +1,6 @@
 import React from 'react';
 import roadmapImage from "../images/roadmap-plan.png";
+import "../css/roadmap-styles.css"
 
 
 const Roadmap = () => {

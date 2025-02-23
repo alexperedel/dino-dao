@@ -1,6 +1,7 @@
 import React from 'react';
 import logoDiscord from "../images/logo-discord-white.png";
 import logoX from "../images/logo-x-white.png";
+import "../css/community-styles.css"
 
 const Community = () => {
     return (

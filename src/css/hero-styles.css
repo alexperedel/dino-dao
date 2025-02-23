@@ -1,0 +1,67 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.hero-section-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero-section-text h1 {
+    color: white;
+    font-family: "Press Start 2P", serif;
+    font-size: 3rem;
+}
+
+.hero-section-button {
+    position: absolute;
+    bottom: 30%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.hero-section-button .button-link {
+    padding: 16px 32px;
+    justify-content: center;
+    background-color: rgba(26, 26, 46, 0.9);
+    font-family: "Press Start 2P", monospace;
+    z-index: 0;
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.hero-section .button-link:hover {
+    background-color: rgba(26, 26, 46, 1);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    border-color: #fff;
+}
+
+.hero-section .button-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px #fff;
+}
+
+.hero-section a {
+    text-decoration: none;
+    color: inherit;
+}

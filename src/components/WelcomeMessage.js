@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import terminal from "../images/terminal.png";
+import "../css/welcome-window-styles.css"
 
 const Welcome = ( { setTerminalActive } ) => {
     const [isWelcomeVisible, setIsWelcomeVisible] = useState(true);
@@ -43,7 +44,7 @@ const Welcome = ( { setTerminalActive } ) => {
                     setShowButton(true);
                 }, 1000);
             }
-        }, 30);
+        }, 20);
 
         return () => clearInterval(interval);
     }, [text, isComplete, setTerminalActive]);
@@ -51,9 +52,9 @@ const Welcome = ( { setTerminalActive } ) => {
     return (
         <div>
             {isWelcomeVisible && (
-                <div className="visible-message">
-                    <div className="terminal">
-                        <p className="terminal-text"> {displayedText} </p>
+                <div className="welcome-window-visible-message">
+                    <div className="welcome-window">
+                        <p className="welcome-window-text"> {displayedText} </p>
                         <button type="button" onClick={handleStart} className="button"
                                 style={{
                                     opacity: showButton ? 1 : 0,

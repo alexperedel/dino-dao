@@ -1,0 +1,76 @@
+.community-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Press Start 2P", serif;
+    background-image: url('../images/community-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-box h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1%;
+}
+
+.community-box .community-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 16px 32px;
+    justify-content: center;
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#community-discord-logo {
+    padding: 14px 26px;
+}
+
+#community-x-logo {
+    padding: 14px 28px;
+}
+
+.community-box .community-button {
+
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.community-box .community-button:hover {
+    background-color: rgba(26, 26, 46, 1);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    border-color: #fff;
+}
+
+.community-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.discord-logo {
+    width: 30px;
+}
+
+.x-logo {
+    width: 24px;
+}
