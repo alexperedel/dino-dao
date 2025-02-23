@@ -1,5 +1,4 @@
 import React, {useEffect, useState, useRef} from 'react';
-import terminal from "../images/terminal.png";
 import "../css/welcome-window-styles.css"
 
 const Welcome = ( { setTerminalActive } ) => {
@@ -20,7 +19,6 @@ const Welcome = ( { setTerminalActive } ) => {
     const [displayedText, setDisplayedText] = useState("");
     const [isComplete, setIsComplete] = useState(false);
     const [showButton, setShowButton] = useState(false);
-    const [showImg, setImg] = useState(false);
 
     const indexRef = useRef(0);
 
@@ -37,12 +35,8 @@ const Welcome = ( { setTerminalActive } ) => {
                 setIsComplete(true);
 
                 setTimeout(() => {
-                    setImg(true);
-                }, 500);
-
-                setTimeout(() => {
                     setShowButton(true);
-                }, 1000);
+                }, 500);
             }
         }, 20);
 
@@ -61,16 +55,6 @@ const Welcome = ( { setTerminalActive } ) => {
                                 }}>
                             Let's Go!
                         </button>
-
-                        <img
-                            className="img-computer"
-                            style={{
-                                opacity: showImg ? 1 : 0,
-                            }}
-                            alt="computer"
-                            src={terminal}
-                        />
-
                     </div>
                 </div>
             )}

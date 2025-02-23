@@ -66,13 +66,13 @@ const Header = () => {
             </nav>
 
             <div className="social-icons">
-                <button className="icon-button">
+                <button className="icon-button" id="x-discord-button">
                     <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
                         <img className="discord-logo" src={logoDiscord} alt="discord.com Logo"/>
                     </a>
                 </button>
 
-                <button className="icon-button">
+                <button className="icon-button" id="x-logo-button">
                     <a href="https://x.com" target="_blank" rel="noopener noreferrer">
                         <img className="x-logo" src={logoX} alt="X.com Logo"/>
                     </a>

@@ -1,37 +1,34 @@
 .welcome-window {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 15px;
-    z-index: -1;
-
 
     background-color: #0A0A0A;
     color: #fff;
     font-family: "Press Start 2P", monospace;
-    font-size: 16px;
+    font-size: 1rem;
+    border: 2px solid white;
     border-radius: 20px;
-    padding: 30px 25px;
+    padding: 30px 2%;
     white-space: pre-line;
-    width: 90%;
-    height: 400px;
+    width: 55%;
+    height: 350px;
     line-height: 2;
 }
 
 .welcome-window .button {
     grid-row: 2;
-    grid-column: span 2;
-    width: auto;
-    max-width: 200px;
     justify-self: center;
     color: #fff;
     background-color: #0A0A0A;
     border: 2px solid #fff;
     padding: 12px 24px;
+    height: 50px;
     margin-top: 25px;
     font-family: "Press Start 2P", monospace;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -50,23 +47,12 @@
     box-shadow: 0 0 5px #fff;
 }
 
-.welcome-window .img-computer {
-    grid-row: 1;
-    grid-column: 2;
-    margin-top: 1%;
-    transition: all 0.5s ease;
-    opacity: 0;
-    justify-self: center;
-    width: 320px;
-    height: 240px;
-}
-
 .welcome-window .welcome-window-text {
     grid-row: 1;
-    grid-column: 1;
     margin-top: 1%;
-    padding-left: 5%;
+    padding-left: 2%;
     width: 100%;
+    text-align: left;
     justify-self: center;
 }
 
