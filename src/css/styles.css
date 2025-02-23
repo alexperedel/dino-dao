@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,7 @@
     left: 50%;
     transform: translateX(-50%);
     border-radius: 80px;
+    z-index: 55;
 
     justify-content: center;
     align-items: center;
@@ -27,7 +32,7 @@
 }
 
 .header img {
-    width: 220px;
+    width: 210px;
     height: auto;
     object-fit: contain;
     padding: 1.5%;
@@ -178,6 +183,7 @@
     font-family: "Press Start 2P", serif;
     line-height: 1.6;
     color: white;
+    border-radius: 20px;
 }
 .about .about-content h2 {
     text-align: center;
@@ -213,6 +219,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 
 .hero-section {
@@ -220,7 +227,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -2;
     background-image: url('../images/volcano.png');
     background-size: cover;
     background-position: center;
@@ -230,10 +236,24 @@
     transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
+.hero-section-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
 .hero-section-text h1 {
     color: white;
     font-family: "Press Start 2P", serif;
     font-size: 3rem;
+}
+
+.hero-section-button {
+    position: absolute;
+    bottom: 30%;
+    transform: translateY(-50%);
+    text-align: center;
 }
 
 .hero-section-button .button-link {
@@ -292,6 +312,7 @@
     line-height: 1.6;
     color: white;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .roadmap .roadmap-image {
@@ -307,4 +328,92 @@
     text-align: center;
     font-size: 32px;
     margin-bottom: 2%;
+}
+
+.community-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Press Start 2P", serif;
+    background-image: url('../images/community-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-box h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1%;
+}
+
+.community-box .community-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 16px 32px;
+    justify-content: center;
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#community-discord-logo {
+    padding: 14px 26px;
+}
+
+#community-x-logo {
+    padding: 14px 28px;
+}
+
+.community-box .community-button {
+
+
+    color: #fff;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border: 2px solid white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.community-box .community-button:hover {
+    background-color: rgba(26, 26, 46, 1);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    border-color: #fff;
+}
+
+.community-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.discord-logo {
+    width: 30px;
+}
+
+.x-logo {
+    width: 24px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 10px;
+    font-family: "Press Start 2P", serif;
+    background: #1a1a2e;
+    color: white;
+    font-size: 14px;
+    border-top: 2px solid white;
+    width: 100%;
 }

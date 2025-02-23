@@ -42,7 +42,7 @@ export default function Hero({ isTerminalActive }) {
     }, [charIndex, isDeleting, indexRef, textArray, isTerminalActive]);
 
     return (
-        <div className="hero-section">
+        <div className="hero-section" id="hero-section">
             <div className="hero-section-text">
                 <h1>We Are {displayedText}</h1>
             </div>
