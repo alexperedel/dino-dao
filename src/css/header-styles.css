@@ -12,11 +12,10 @@
     margin-top: 2%;
     padding: 5px 20px;
     position: fixed;
-    width: 80%;
+    width: 90%;
 }
 
 .header img {
-    width: 210px;
     height: auto;
     object-fit: contain;
     padding: 1.5%;
@@ -26,14 +25,13 @@
     display: flex;
     justify-content: center;
     font-family: "Press Start 2P", serif;
-    gap: 20px;
+    gap: 15px;
     flex-grow: 1;
 }
 
 .top-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
     padding: 10px 10px;
 }
 
@@ -63,14 +61,6 @@
 
 #x-logo-button {
     padding: 10px 12px;
-}
-
-.social-icons .icon-button .discord-logo {
-    width: 32px;
-}
-
-.social-icons .icon-button .x-logo {
-    width: 24px;
 }
 
 .icon-button:hover {

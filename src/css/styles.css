@@ -9,3 +9,120 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+@media (max-width: 575px) {
+
+    .header img {
+        width: 130px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    p { font-size: 14px; }
+    .container { padding: 10px; }
+}
+
+/* Small Devices (tablets, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .header img {
+        width: 150px;
+    }
+
+    .hero-section-text h1 {
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 16px;
+    }
+    h1 { font-size: 28px; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 20px; }
+    p { font-size: 16px; }
+    .container { padding: 15px; }
+}
+
+/* Medium Devices (small laptops, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header img {
+        width: 170px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .hero-section-text h1 {
+        font-size: 2rem;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 24px; }
+    p { font-size: 18px; }
+    .container { padding: 20px; }
+}
+
+/* Large Devices (desktops, 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .header img {
+        width: 190px;
+    }
+
+    .social-icons .icon-button .discord-logo {
+        width: 29px;
+    }
+
+    .social-icons .icon-button .x-logo {
+        width: 22px;
+    }
+
+    .hero-section-text h1 {
+        font-size: 2.5rem;
+    }
+
+    body {
+        font-size: 18px;
+    }
+    h1 { font-size: 36px; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 28px; }
+    p { font-size: 20px; }
+    .container { padding: 30px; }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .header img {
+        width: 210px;
+    }
+
+    .social-icons .icon-button .discord-logo {
+        width: 32px;
+    }
+
+    .social-icons .icon-button .x-logo {
+        width: 24px;
+    }
+
+    .hero-section-text h1 {
+        font-size: 3rem;
+    }
+
+    body {
+        font-size: 20px;
+    }
+    h1 { font-size: 40px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 32px; }
+    p { font-size: 22px; }
+    .container { padding: 40px; }
+}
