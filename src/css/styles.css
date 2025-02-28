@@ -16,8 +16,17 @@ html {
         width: 130px;
     }
 
+    .roadmap .roadmap-image {
+        width: 240px;
+        height: auto;
+    }
+
+    .community-box {
+        background-image: url('../images/community-background-smaller-screen.png');
+    }
+
     body {
-        font-size: 12px;
+        font-size: 14px;
     }
     h1 { font-size: 24px; }
     h2 { font-size: 20px; }
@@ -37,6 +46,15 @@ html {
         font-size: 2rem;
     }
 
+    .roadmap .roadmap-image {
+        width: 320px;
+        height: auto;
+    }
+
+    .community-box {
+        background-image: url('../images/community-background-smaller-screen.png');
+    }
+
     body {
         font-size: 16px;
     }
@@ -54,14 +72,22 @@ html {
         width: 170px;
     }
 
-    body {
-        font-size: 16px;
-    }
-
     .hero-section-text h1 {
         font-size: 2rem;
     }
 
+    .roadmap .roadmap-image {
+        width: 360px;
+        height: auto;
+    }
+
+    .community-box {
+        background-image: url('../images/community-background-smaller-screen.png');
+    }
+
+    body {
+        font-size: 18px;
+    }
     h1 { font-size: 32px; }
     h2 { font-size: 28px; }
     h3 { font-size: 24px; }
@@ -70,7 +96,7 @@ html {
 }
 
 /* Large Devices (desktops, 992px - 1199px) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1100px) {
 
     .header img {
         width: 190px;
@@ -88,8 +114,18 @@ html {
         font-size: 2.5rem;
     }
 
+    .roadmap .roadmap-image {
+        width: 400px;
+        height: auto;
+    }
+
+    .community-box {
+        background-image: url('../images/community-background.png');
+        background-size: cover;
+    }
+
     body {
-        font-size: 18px;
+        font-size: 20px;
     }
     h1 { font-size: 36px; }
     h2 { font-size: 32px; }
@@ -99,7 +135,10 @@ html {
 }
 
 /* Extra Large Devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1101px) {
+    .welcome-window-visible-message {
+        display: flex;
+    }
 
     .header img {
         width: 210px;
@@ -117,12 +156,27 @@ html {
         font-size: 3rem;
     }
 
+    .roadmap .roadmap-image {
+        width: 445px;
+        height: auto;
+    }
+
+    .community-box {
+        background-image: url('../images/community-background.png');
+    }
+
     body {
-        font-size: 20px;
+        font-size: 22px;
     }
     h1 { font-size: 40px; }
     h2 { font-size: 36px; }
     h3 { font-size: 32px; }
     p { font-size: 22px; }
     .container { padding: 40px; }
+}
+
+@media (max-width: 1100px) {
+    .welcome-window-visible-message {
+        display: none;
+    }
 }

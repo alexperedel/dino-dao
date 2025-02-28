@@ -1,63 +1,46 @@
-import React, {useState, useEffect, useRef, useCallback } from 'react';
 import logo from '../images/logo-dao.png';
 import logoX from '../images/logo-x-white.png';
 import logoDiscord from '../images/logo-discord-white.png';
 import "../css/header-styles.css"
+import useScrollHide from "../hooks/useScrollHide";
+import useHandleResize from "../hooks/useHandleResize";
+import {IoMdClose, IoMdMenu} from "react-icons/io";
+import {useState} from "react";
 
 
 const Header = () => {
 
-    const [ticking, setTicking] = useState(false);
-    const [isNavClicked, setIsNavClicked] = useState(false)
-    let lastScrollTop = useRef(0);
-    const spaceAboveHeader = 0.05 * window.innerHeight;
+    const { handleNavClick } = useScrollHide();
 
-    const handleNavClick = () => {
-        setIsNavClicked(true);
-    };
+    const [isOpen, setIsOpen] = useState(false);
 
-    const handleScroll = useCallback(() => {
-        console.log(ticking);
-        if (!isNavClicked) {
-            if (!ticking) {
-                console.log(isNavClicked);
-                console.log(ticking);
-                const element = document.querySelector(".header");
-                requestAnimationFrame(() => {
-                    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    useHandleResize(isOpen);
 
-                    if (lastScrollTop.current < scrollTop) {
-                        element.style.transform = `translateY(-${element.offsetHeight + spaceAboveHeader}px) translateX(-50%)`;
-                    } else {
-                        element.style.transform = 'translateY(0) translateX(-50%)';
-                    }
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
 
-                    lastScrollTop.current = scrollTop;
-                    setTicking(false);
-            })}
+    const setTopMenu = () => {
+        const header = document.querySelector(".header");
+        const mobileMenu = document.querySelector(".mobile-menu");
 
-            setTicking(true);
+        if (!isOpen) {
+            header.style.backgroundColor = "#1a1a2e";
+            mobileMenu.style.top = `${header.offsetHeight - header.offsetHeight * 0.1}px`;
         }
-    }, [ticking, isNavClicked, spaceAboveHeader]);
-
-
-    useEffect(() => {
-        const scrollEndTimeout = setTimeout(() => {
-            if (isNavClicked) {
-                setIsNavClicked(false);
-            }
-        }, 800);
-
-        window.addEventListener('scroll', handleScroll);
-        return () =>
-        { window.removeEventListener("scroll", handleScroll);
-          clearTimeout(scrollEndTimeout); }
-    }, [handleScroll, isNavClicked]);
-
+        else {
+            header.style.backgroundColor = "rgb(26, 26, 46, 0.9)";
+        }
+    }
 
     return (
         <header className="header">
             <img src={logo} alt="logo"/>
+
+            <button className="hamburger" onClick = {() => {toggleMenu(); setTopMenu()}} aria-label="Toggle menu">
+                {isOpen ? <IoMdClose size={30}/> : <IoMdMenu size={30}/>}
+            </button>
+
             <nav className="top-nav">
                 <a href="#hero-section" onClick={handleNavClick}>Home</a>
                 <a href="#about-section" onClick={handleNavClick}>About</a>
@@ -78,6 +61,43 @@ const Header = () => {
                     </a>
                 </button>
             </div>
+
+            <nav className={`mobile-menu ${isOpen ? "open" : ""}`}>
+                <a href="#hero-section" onClick={() => {
+                    handleNavClick();
+                    setIsOpen(false);
+                }}>Home</a>
+
+                <a href="#about-section" onClick={() => {
+                    handleNavClick();
+                    setIsOpen(false);
+                }}>About</a>
+
+                <a href="#roadmap-section" onClick={() => {
+                    handleNavClick();
+                    setIsOpen(false);
+                }}>Roadmap</a>
+
+                <a href="#community-section" onClick={() => {
+                    handleNavClick();
+                    setIsOpen(false);
+                }}>Community</a>
+
+                <div className="mobile-social-icons">
+                    <button className="icon-button" id="x-discord-button">
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                            <img className="discord-logo" src={logoDiscord} alt="discord.com Logo"/>
+                        </a>
+                    </button>
+
+                    <button className="icon-button" id="x-logo-button">
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                            <img className="x-logo" src={logoX} alt="X.com Logo"/>
+                        </a>
+                    </button>
+                </div>
+            </nav>
+
         </header>
     );
 };

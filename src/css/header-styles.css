@@ -2,17 +2,10 @@
     display: flex;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 80px;
-    z-index: 55;
-
-    justify-content: center;
-    align-items: center;
     background-color: rgb(26, 26, 46, 0.9);
     color: white;
-    margin-top: 2%;
     padding: 5px 20px;
-    position: fixed;
-    width: 90%;
+    z-index: 55;
 }
 
 .header img {
@@ -22,7 +15,6 @@
 }
 
 .top-nav {
-    display: flex;
     justify-content: center;
     font-family: "Press Start 2P", serif;
     gap: 15px;
@@ -41,7 +33,6 @@
 }
 
 .social-icons {
-    display: flex;
     flex-direction: row;
     padding-right: 1.5%;
     gap: 10px;
@@ -66,4 +57,88 @@
 .icon-button:hover {
     background-color: #333333;
     border-radius: 10px;
+}
+
+@media (min-width: 1101px) {
+    .header {
+        border-radius: 80px;
+        margin-top: 2%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 90%;
+    }
+
+    .top-nav {
+        display: flex;
+    }
+
+    .social-icons {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .top-nav {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .header {
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header img {
+        justify-self: left;
+    }
+
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #1a1a2e;
+        padding: 20px;
+    }
+
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobile-social-icons img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .mobile-social-icons .icon-button .discord-logo {
+        width: 32px;
+    }
+
+    .mobile-social-icons .icon-button .x-logo {
+        width: 24px;
+    }
 }
