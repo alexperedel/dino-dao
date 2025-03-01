@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dino-dao/static/css/main.da1782ea.css",
-    "main.js": "/dino-dao/static/js/main.452e6528.js",
+    "main.css": "/dino-dao/static/css/main.db6903e8.css",
+    "main.js": "/dino-dao/static/js/main.afd98a12.js",
     "static/media/roadmap-background.png": "/dino-dao/static/media/roadmap-background.13b038fbd2848ef2183e.png",
     "static/media/hero-background.png": "/dino-dao/static/media/hero-background.7256a2b098bd3754ddcb.png",
     "static/media/about-background.png": "/dino-dao/static/media/about-background.67787f1036f94c310065.png",
@@ -10,11 +10,11 @@
     "static/media/roadmap-plan.png": "/dino-dao/static/media/roadmap-plan.74d4c8303fe2662e0443.png",
     "static/media/logo-x-white.png": "/dino-dao/static/media/logo-x-white.4d73a49285dbe9cac801.png",
     "index.html": "/dino-dao/index.html",
-    "main.da1782ea.css.map": "/dino-dao/static/css/main.da1782ea.css.map",
-    "main.452e6528.js.map": "/dino-dao/static/js/main.452e6528.js.map"
+    "main.db6903e8.css.map": "/dino-dao/static/css/main.db6903e8.css.map",
+    "main.afd98a12.js.map": "/dino-dao/static/js/main.afd98a12.js.map"
   },
   "entrypoints": [
-    "static/css/main.da1782ea.css",
-    "static/js/main.452e6528.js"
+    "static/css/main.db6903e8.css",
+    "static/js/main.afd98a12.js"
   ]
 }
