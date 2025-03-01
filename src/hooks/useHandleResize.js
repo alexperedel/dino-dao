@@ -12,7 +12,7 @@ const useHandleResize = () => {
         }
 
         if (!isOpenState) {
-            mobileMenu.style.top = `${header.offsetHeight - header.offsetHeight * 0.1}px`;
+            mobileMenu.style.top = `${header.offsetHeight - header.offsetHeight * 0.02}px`;
         }
     };
 

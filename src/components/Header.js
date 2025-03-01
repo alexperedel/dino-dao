@@ -26,7 +26,7 @@ const Header = () => {
 
         if (!isOpen) {
             header.style.backgroundColor = "#1a1a2e";
-            mobileMenu.style.top = `${header.offsetHeight - header.offsetHeight * 0.1}px`;
+            mobileMenu.style.top = `${header.offsetHeight - header.offsetHeight * 0.02}px`;
         }
         else {
             header.style.backgroundColor = "rgb(26, 26, 46, 0.9)";

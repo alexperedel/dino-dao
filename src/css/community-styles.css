@@ -71,3 +71,10 @@
 .x-logo {
     width: 24px;
 }
+
+@media (max-width: 1100px) {
+    .community-box {
+        background-image: url('../images/community-background-smaller-screen.png');
+    }
+
+}

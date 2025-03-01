@@ -13,7 +13,10 @@ export default function Hero({ isTerminalActive }) {
     const indexRef = useRef(0);
 
     useEffect(() => {
-        if (isTerminalActive) return;
+
+        if (window.innerWidth >= 1100 && isTerminalActive) {
+            return;
+        }
 
         const currentWord = textArray[indexRef.current];
 

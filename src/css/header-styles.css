@@ -98,7 +98,9 @@
     .header {
         justify-content: space-between;
         position: fixed;
+        border-bottom: 2px solid white;
         width: 100%;
+        z-index: 56;
     }
 
     .header img {
@@ -119,6 +121,27 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        gap: 5px;
+    }
+
+    .mobile-menu.open a {
+        font-family: "Press Start 2P", serif;
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+        background-color: #333333;
+        border-radius: 5px;
+    }
+
+    .mobile-menu.open .mobile-social-icons {
+        margin-top: 10px;
     }
 
     .hamburger {
@@ -135,10 +158,10 @@
     }
 
     .mobile-social-icons .icon-button .discord-logo {
-        width: 32px;
+        width: 35px;
     }
 
     .mobile-social-icons .icon-button .x-logo {
-        width: 24px;
+        width: 26px;
     }
 }
