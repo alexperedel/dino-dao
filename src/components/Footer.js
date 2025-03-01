@@ -4,7 +4,8 @@ import "../css/footer-styles.css"
 const About = () => {
     return (
         <footer>
-            © 2025 Dino DAO. All rights reserved.
+            <span>© 2025 Dino DAO.</span>
+            <span> All rights reserved.</span>
         </footer>
     );
 };

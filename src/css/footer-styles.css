@@ -1,10 +1,28 @@
 footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 15px 10px;
     font-family: "Press Start 2P", serif;
     background: #1a1a2e;
     color: white;
-    font-size: 14px;
     border-top: 2px solid white;
     width: 100%;
+}
+
+footer span {
+    margin-right: 6px;
+    text-align: center; /* Optional: centers the text */
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    footer span {
+        margin-right: 0;
+    }
 }

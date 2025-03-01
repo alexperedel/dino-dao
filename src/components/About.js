@@ -13,12 +13,6 @@ const About = () => {
                 </p>
 
                 <p>
-                    Like dinosaurs ruling their era, we move with strength and purpose—pushing boundaries, supporting
-                    each
-                    other, and making an impact.
-                </p>
-
-                <p>
                     This is more than a DAO. It’s a movement. It’s our playground. And we’re just getting started.
                 </p>
             </div>

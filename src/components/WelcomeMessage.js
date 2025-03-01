@@ -12,7 +12,7 @@ const Welcome = ( { setTerminalActive } ) => {
     const text = `
         > Connecting to Dino DAO...
         > Access granted.
-        > Decentralized. Anonymous. Unlimited.
+        > Private. Anonymous. Unlimited.
         > Your station: Web3.`;
 
 
